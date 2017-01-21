@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="pace/pace.min.js"></script>
+    <link href="pace/minimal.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="uk-container uk-animation-fade">
+
+    <div class="uk-section uk-padding-remove-top uk-margin-medium-top">
+        <a href="index.html"><div class="colejohnson uk-float-left">
+            Cole Johnson
+            <span style="font-weight: normal;">digital designer</span>
+        </div></a>
+        <div class="contactresume uk-float-right " uk-sticky>
+            <p class="uk-float-right"><a href="#footer" uk-scroll="duration:1200; offset:50" class="contactLink uk-link-muted">contact</a> - <a class="resumeLink uk-link-muted" href="Cole_Johnson_Resume.pdf">resume</a></p>
+            <div class="uk-invisible" style="height: 80vh;, max-width: 20px;"></div>
+            <a class="email uk-float-right" href="mailto:hello@cole.works?" target="_top">hello(at)cole.works</a>
+        </div>
+
+    </div>
+
+
+
+    <div class="uk-section uk-margin-large-left uk-margin-large-right uk-padding-remove-bottom">
+        <div class="about">
+            <img class="workSecImg" style="width: 122px;, height: 163px;" src="img/profile.png">
+            <p class="aboutText"> My name is Cole, I'm a junior studying <a target="_blank" href="http://hcc.rit.edu/">Human Centered Computing</a> at the Rochester Institute of Technology.
+                I've spent time with digital designers at Makeway, smart-home developers at Cenify, and a number of
+                amazing clients during my time freelancing. I'm learning how to create articulate designs for people and
+                solve problems we can all relate to. <a href="about.html">Learn More</a>
+            </p>
+
+            <p class="currentlySentence">Previously at: <a href="#makeway" uk-scroll="duration:1200; offset:50;">Makeway</a> &nbsp;-&nbsp; Currently: Freelance &nbsp;-&nbsp; Spending late nights on: <a href="#modus" uk-scroll="duration:1200; offset:50;">Modus</a></p>
+
+        </div>
+    </div>
+
+    <div class="uk-section uk-margin-large-left uk-margin-large-right">
+        <div class="work">
+            <p class="selectedWorkText">Selected Works</p>
+
+            <div class="workSec uk-container uk-animation-toggle">
+                <a href="layline.html"><img class="workSecImg uk-box-shadow-small" style="width: 614px;, height: 275px;," src="img/layline.png"></a>
+                <div class="dash" uk-scrollspy="cls: uk-animation-slide-left; repeat: true" style="background:#00bdf9;"></div>
+                <p class="workSecTitle uk-margin-remove uk-text-lead">Layline Advisors</p>
+                <p class="workSecDesc uk-margin-small">Lead design of branding and online presence for and independent investment advisor</p>
+            </div>
+
+            <div id="makeway" class="workSec uk-container uk-margin-xlarge-top" uk-scrollspy="cls: uk-animation-slide-top-small; repeat: false">
+                <a href="taterase.html"><img class="uk-box-shadow-small" style="width: 614px;, height: 275px;, object-fit: contain;" src="img/taterase.png"></a>
+                <div class="dash" uk-scrollspy="cls: uk-animation-slide-left; repeat: true" style="background:#d79f0f;"></div>
+                <p class="workSecTitle uk-margin-remove uk-text-lead">Tat-Erase U.S.A.</p>
+                <p class="workSecDesc uk-margin-small">Led design of a personable site for a sensitive buisness</p>
+            </div>
+
+            <div class="workSec uk-container uk-margin-xlarge-top" uk-scrollspy="cls: uk-animation-slide-top-small; repeat: false">
+                <a href="cenify.html"><img class="uk-box-shadow-small" style="width: 614px;, height: 275px;, object-fit: contain;" src="img/cenify.png"></a>
+                <div class="dash" uk-scrollspy="cls: uk-animation-slide-left; repeat: true" style="background:#4990e2;"></div>
+                <p class="workSecTitle uk-margin-remove uk-text-lead">Cenify</p>
+                <p class="workSecDesc uk-margin-small">Led design of a mobile UI for a smart-home startup</p>
+            </div>
+
+            <div id="modus" class="workSec uk-container uk-margin-xlarge-top uk-margin-xlarge-bottom" uk-scrollspy="cls: uk-animation-slide-top-small; repeat: false">
+                <a href="modus.html"><img class="uk-box-shadow-small" style="width: 614px;, height: 275px;, object-fit: contain;" src="img/modus.png"></a>
+                <div class="dash" uk-scrollspy="cls: uk-animation-slide-left; repeat: true" style="background:#9012fe;"></div>
+                <p class="workSecTitle uk-margin-remove uk-text-lead">Modus</p>
+                <p class="workSecDesc uk-margin-small">Led design and development of a procrastination killer.</p>
+            </div>
+
+            <p class="selectedWorkText">Other Projects</p>
+
+            <div class="uk-flex uk-flex-wrap uk-flex-wrap-reverse uk-flex-wrap-around uk-height-medium" uk-scrollspy="cls: uk-animation-slide-top-small; repeat: false">
+                <div class="uk-width-1-3">
+                    <a href="brb.html"><img class="uk-margin-bottom uk-box-shadow-small" style="width: 275px;, height: 275px;, object-fit: contain;" src="img/brb.png"></a>
+                    <p class="workSecTitle uk-margin-remove uk-text-lead">BRB</p>
+                    <p class="workSecDescOther uk-margin-small uk-text-break uk-text-left">Led design and development of a procrastination killer.</p>
+                </div>
+                <div class="uk-width-1-3 uk-margin-small-left">
+                    <a href="link.html"><img class="uk-margin-bottom uk-box-shadow-small" style="width: 275px;, height: 275px;, object-fit: contain;" src="img/link.png"></a>
+                    <p class="workSecTitle uk-margin-remove uk-text-lead">Link</p>
+                    <p class="workSecDescOther uk-margin-small uk-text-break uk-text-left">Led design and development of a procrastination killer.</p>
+                </div>
+
+            </div>
+            </div>
+    </div>
+
+</div>
+
+<div class="footer uk-align-center uk-margin-small-bottom" id="footer">
+    <p class="footerText">Designed and built on the back lanai in Kona, Hawaii // Cole Johnson 2016</p>
+    <p class=""><a href="mailto:hello@cole.works?" target="_top">Email</a> &nbsp;-&nbsp<a>Facebook</a> &nbsp;-&nbsp;<a>Twitter</a> &nbsp;-&nbsp;<a>Instagram</a></p>
+</div>
+
+</body>
+</html>
