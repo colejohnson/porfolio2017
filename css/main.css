@@ -105,7 +105,23 @@ a:hover{
     font-stretch: normal;
     letter-spacing: 0;
     color: #4a4a4a;
+    text-decoration: none;
 
+}
+
+.email::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #000;
+    transition: width .3s;
+    text-decoration: none;
+
+}
+
+.email:hover::after {
+    width: 100%;
 }
 
 /*
@@ -348,12 +364,11 @@ START PROJECT PAGE CSS
 .projectSubDesc{
     width: 327px;
     font-family: Avenir Next;
-    line-height: 9pt;
+    line-height: 1pt;
     font-size: 16px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    letter-spacing: 1px;
     color: #4a4a4a;
 }
 
@@ -371,6 +386,10 @@ START PROJECT PAGE CSS
 .imageNote{
     width: 100%;
     cursor: auto;
+}
+
+.note{
+    width: 327px;
 }
 
 .overlay{
