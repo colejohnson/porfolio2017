@@ -14,27 +14,29 @@
 <div class="uk-container uk-animation-fade">
 
     <div class="uk-section uk-padding-remove-top uk-margin-medium-top">
-        <a href="index.html"><div class="colejohnson uk-float-left">
-            Cole Johnson
-            <span style="font-weight: normal;">digital designer</span>
+        <a href="index.html"><div class="colejohnson uk-float-left uk-margin-small-top" uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
+            <div>
+                Cole Johnson
+                <br>
+                <span style="font-weight: normal;">digital designer</span>
+            </div>
         </div></a>
         <div class="contactresume uk-float-right " uk-sticky>
-            <p class="uk-float-right"><a href="#footer" uk-scroll="duration:1200; offset:50" class="contactLink uk-link-muted">contact</a> - <a class="resumeLink uk-link-muted">resume</a></p>
+            <p class="uk-float-right"><a href="about.html" class="contactLink uk-link-muted">about</a> - <a class="resumeLink uk-link-muted" href="Cole_Johnson_Resume.pdf" target="_blank">resume</a></p>
             <div class="uk-invisible" style="height: 80vh;, max-width: 20px;"></div>
-            <p class="email uk-float-right">hello(at)cole.works</p>
+            <a class="email uk-float-right uk-link-muted" href="mailto:hello@cole.works?" target="_top">hello(at)cole.works</a>
         </div>
-
     </div>
 
     <div class="uk-section uk-child-width-auto uk-padding-remove-bottom uk-margin-large-top" uk-grid>
         <div>
-            <img class="uk-placeholder" src="" style="width: 800px;, height: auto;">
+            <img class="uk-box-shadow-small" src="img/brb/splash@2x.png" style="width: 800px;, height: auto;">
 
         </div>
         <div class="uk-margin-small-left uk-padding-remove-top">
             <p class="splashSecTitle uk-margin-remove-bottom uk-text-lead">BRB</p>
             <p class="splashSecDesc uk-margin-small">You're away from you computer, but you'll be right back.</p>
-            <div class="dash uk-margin-small" uk-scrollspy="cls: uk-animation-slide-left; repeat: true" style="background:#4990e2;"></div>
+            <div class="dash uk-margin-small" uk-scrollspy="cls: uk-animation-slide-left; repeat: true" style="background:#0f7975;"></div>
             <div class="projectAboutColumn">
                 <p class="projectSubtext  ">CATEGORY</p>
                 <p class="projectSubDesc  ">Personal Project</p>
@@ -55,7 +57,7 @@
         </div>
     </div>
 
-    <div class="uk-section">
+    <div class="uk-section uk-padding-remove-top">
 
         <div class="projectParagraph uk-margin-xlarge-bottom">
             <p>
@@ -69,24 +71,27 @@
 
         <div class="projectParagraph">
             <p>
-                <span style="font-weight: 500;">Approach</span><br>
-                Creating a smart home experience that’s easier then turning on a light switch. Albeit a little gung-ho,
-                the meaning behind that is simple. Smart home solutions with software and connected devices need to
-                provide clear and accessible advantages to traditional home control. The Internet of Things market
-                contains many solutions and innovations, but without good interface design, they just won’t hold up.
+                Brb is a web application that provides a quick solution to notifying others where you are when you leave
+                your workspace. This is accomplished through the display of a full screen notice comprised of an
+                aesthetically pleasing motion graphic and a single line of editable text. These notices are labeled as
+                tags, and can be quickly accessed through a keyword preceded by a slash at the end of brb’s url (i.e.
+                brb.me/coffee) or from a selection of popular tags on the websites main screen. These tags are meant to
+                be purposefully general ranging from “lunch” and “phone call” to a default “be right back”. While
+                primarily imagined for an open workplace environment, brb has further uses in school or casual public
+                places.
             </p>
         </div>
 
-        <a uk-toggle="target: #toggle-usage1 "><div class="imageNote uk-child-width-auto uk-margin-large uk-inline" uk-grid>
+        <a uk-toggle="target: #toggle-usage1 "><div class="imageNote uk-text-muted uk-child-width-auto uk-margin-large uk-inline" uk-grid>
             <div class="">
                 <div id="toggle-usage1" class="overlay uk-position-cover uk-inline-clip uk-hidden@l" hidden>
-                    <p class="uk-position-center overlayText">Nice note! Quite a nice note you've got there.</p>
+                    <p class="uk-position-center overlayText">How I let co-workers know I’m caffeinating.</p>
                 </div>
-                <img class="uk-margin-large uk-placeholder" src="" style="width: 700px;, height: auto;">
+                <img class="uk-margin-large" src="img/brb/brb.gif" style="width: 700px;, height: auto;">
             </div>
 
             <div class="note uk-position-center-right uk-visible@l" style="height: auto;" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-                <p>Sick fucking note my dude</p>
+                <p>How I let co-workers know I’m caffeinating.</p>
                 <img class="" src="img/arrow.png" style="width: 23px;, height: auto;">
             </div>
 
@@ -94,54 +99,55 @@
 
         <div class="projectParagraph">
             <p id="target">
-                <span style="font-weight: 500;">Method</span><br>
-                Lorem ipsum dolor sit amet, elitr sanctus repudiare no vix, ut est aperiam numquam principes. Euripidis
-                deterruisset et mea. Et mea sonet mentitum interpretaris, semper petentium persequeris ne per. Vis in
-                brute apeirian. No duo utinam placerat, consul lucilius in sea, an unum comprehensam eum.
+                <span style="font-weight: 500;">Approach</span><br>
+                My initial focus was to make this tool quick, because I knew in a normal use case, the user would
+                already be in the process of leaving their workspace. Shortcuts through simple URL tags achieved this,
+                bypassing a selection menu and jumping right to the end point. Realizing the small size and specific
+                function of the project, I thought “why not make this fun?” Bold fonts, thick lines, and bright colors
+                balanced with ample whitespace gave brb a lightweight fun feel. In future releases, I plan to make more
+                dynamic playful animations for transitioning between menus and notice screens, and creating bespoke
+                motion graphics.
             </p>
         </div>
 
-        <a uk-toggle="target: #toggle-usage2 "><div class="imageNote uk-child-width-auto uk-margin-large uk-inline" uk-grid>
+        <a uk-toggle="target: #toggle-usage2 "><div class="imageNote uk-text-muted uk-child-width-auto uk-margin-large uk-inline" uk-grid>
             <div class="">
                 <div id="toggle-usage2" class="overlay uk-position-cover uk-inline-clip uk-hidden@l" hidden>
-                    <p class="uk-position-center overlayText">Nice note! Quite a nice note you've got there.</p>
+                    <p class="uk-position-center overlayText">I see you Betsy.</p>
                 </div>
-                <img class="uk-margin-large uk-placeholder" src="" style="width: 700px;, height: auto;">
+                <img class="uk-margin-large" src="img/modus/modusMock.png" style="width: 700px;, height: auto;">
             </div>
 
             <div class="note uk-position-center-right uk-visible@l" style="height: auto;" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-                <p>Sick fucking note my dude</p>
+                <p>I see you Betsy.</p>
                 <img class="" src="img/arrow.png" style="width: 23px;, height: auto;">
             </div>
 
         </div></a>
+
+        <div class="projectParagraph uk-margin-large-bottom">
+            <p>
+                <span style="font-weight: 500;">Motion Graphics</span><br>
+                I see a huge opportunity for identity and personality in this little web app, and I think that lies
+                particularly in the motion graphics presented. In the first release, the motion graphics used are
+                sourced from Dribbble artists. And while adorable, they don’t contribute to the sites identity, they
+                don’t follow a consistent style, and it feels less personal. I think bespoke motion graphics can really
+                help build the brand of the site, decrease bounce rate, and increase discovery. Want to help me? Get in
+                touch!
+            </p>
+        </div>
 
         <div class="projectParagraph">
             <p>
-                <span style="font-weight: 500;">Method</span><br>
-                Lorem ipsum dolor sit amet, elitr sanctus repudiare no vix, ut est aperiam numquam principes. Euripidis
-                deterruisset et mea. Et mea sonet mentitum interpretaris, semper petentium persequeris ne per. Vis in
-                brute apeirian. No duo utinam placerat, consul lucilius in sea, an unum comprehensam eum.Et mea sonet mentitum interpretaris, semper petentium persequeris ne per. Vis in
-                brute apeirian. No duo utinam placerat, consul lucilius in sea, an unum comprehensam eum.Et mea sonet mentitum interpretaris, semper petentium persequeris ne per. Vis in
-                brute apeirian. No duo utinam placerat, consul lucilius in sea, an unum comprehensam eum.Et mea sonet mentitum interpretaris, semper petentium persequeris ne per. Vis in
-                brute apeirian. No duo utinam placerat, consul lucilius in sea, an unum comprehensam eum.
+                <span style="font-weight: 500;">What's Next</span><br>
+                (2/3/17) With the help of Brendan, a talented developer here at RIT, development of brb V2 has started!
+                The second release of this web-app will be running under node.js. Along with the default tags, users
+                will be able to create their own with a little help from a pasted GIPHY link. Furthermore, users will a
+                BRB account will be able to not only create but save their custom tags. Updates to come.
             </p>
         </div>
 
-        <a uk-toggle="target: #toggle-usage3 "><div class="imageNote uk-child-width-auto uk-margin-large uk-inline" uk-grid>
-            <div class="">
-                <div id="toggle-usage3" class="overlay uk-position-cover uk-inline-clip uk-hidden@l" hidden>
-                    <p class="uk-position-center overlayText">Nice note! Quite a nice note you've got there.</p>
-                </div>
-                <img class="uk-margin-large uk-placeholder" src="" style="width: 700px;, height: auto;">
-            </div>
 
-            <div class="note uk-position-center-right uk-visible@l" style="height: auto;" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-                <p>Sick fucking note my dude</p>
-                <img class="" src="img/arrow.png" style="width: 23px;, height: auto;">
-            </div>
-
-        </div></a>
 
     </div>
 

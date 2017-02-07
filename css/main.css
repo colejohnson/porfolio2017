@@ -171,8 +171,13 @@ BEGIN INDEX.HTML CSS
     color: #9b9b9b;
 }
 
-
-
+.box-shadoww{
+    box-shadow: 1px 1px 4px rgba(0,0,0,.18);
+    transition: box-shadow 200ms ease-in-out;
+}
+.box-shadoww:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+}
 
 .dash{
     width: 14px;
